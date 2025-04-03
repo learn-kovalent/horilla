@@ -161,7 +161,6 @@ AUTH_PASSWORD_VALIDATORS = [
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'  # For collectstatic
 STATICFILES_DIRS = [BASE_DIR / 'static']  # Where your static files live locally
-]
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
