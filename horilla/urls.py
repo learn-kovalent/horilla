@@ -18,6 +18,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.http import JsonResponse
 from django.urls import include, path, re_path
+from django.views.generic import RedirectView
 
 import notifications.urls
 
@@ -42,6 +43,7 @@ urlpatterns = [
     ),
     path("i18n/", include("django.conf.urls.i18n")),
     path("health/", health_check),
+    path('favicon.ico', RedirectView.as_view(url='/static/favicon.ico')),
 ]
 
 if settings.DEBUG:
