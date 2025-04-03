@@ -75,5 +75,5 @@ xhtml2pdf
 XlsxWriter
 gunicorn
 psycopg2-binary
-whitenoise
+whitenoise==6.6.0
 django-storages
